@@ -99,11 +99,6 @@ nav a:hover { color: var(--blue); border-color: var(--cyan); }
 .access-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; }
 .access-tags span { padding: 7px 12px; color: #d8ecf4; font-size: 13px; border: 1px solid rgba(255,255,255,.19); border-radius: 99px; background: rgba(255,255,255,.06); }
 
-.boundary { padding-block: 86px; }
-.boundary-card { padding: 34px 40px; display: grid; grid-template-columns: .42fr .58fr; align-items: center; gap: 60px; border-left: 5px solid var(--cyan); background: #eef6f9; }
-.boundary-card h2 { margin: 0; color: var(--navy); font-size: 30px; }
-.boundary-card p:last-child { margin: 0; color: var(--muted); }
-
 .closing { padding-block: 120px; color: white; text-align: center; background: linear-gradient(rgba(6,31,54,.92), rgba(6,31,54,.94)), url("assets/brain-webgl.png") center/cover; }
 .closing p { margin: 0 0 12px; color: #6ce1e9; font-weight: 800; letter-spacing: .18em; }
 .closing h2 { max-width: 940px; margin: 0 auto; font-size: clamp(34px, 4.6vw, 60px); line-height: 1.35; }
@@ -122,7 +117,7 @@ footer { color: #9eb1bf; background: #041726; }
   .reason-grid, .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .capability-strip { grid-template-columns: 1fr; }
   .capability-strip i { transform: rotate(90deg); text-align: center; }
-  .split-heading, .boundary-card { grid-template-columns: 1fr; gap: 24px; }
+  .split-heading { grid-template-columns: 1fr; gap: 24px; }
   .module-card, .visual-card { grid-template-columns: 1fr; gap: 28px; }
   .module-card.reverse .module-copy, .module-card.reverse img { order: initial; }
 }
@@ -145,7 +140,6 @@ footer { color: #9eb1bf; background: #041726; }
   .module-card { min-height: auto; padding: 24px; }
   .module-copy h3 { font-size: 27px; }
   .wide-figure { padding: 8px; }
-  .boundary-card { padding: 28px 24px; }
   .closing { padding-block: 88px; }
   .footer-inner { padding-block: 30px; align-items: flex-start; flex-direction: column; }
 }
