@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="脑机接口理论平台：面向脑机接口理论研究的一体化数字仿真环境。">
+  <meta property="og:title" content="BCITP｜脑机接口理论平台">
+  <meta property="og:description" content="从真实大脑，到数字推演，再回到真实研究。">
+  <meta property="og:image" content="assets/platform-ui.png">
+  <meta name="theme-color" content="#0b2b4d">
+  <title>BCITP｜脑机接口理论平台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark" aria-hidden="true">BCI</span>
+      <span class="brand-copy">
+        <strong>脑机接口理论平台</strong>
+        <small>Brain-Computer Interface Theoretical Platform</small>
+      </span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#platform">平台能力</a>
+      <a href="#workflow">研究流程</a>
+      <a href="#modules">核心模块</a>
+      <a href="#access">使用方式</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">BCITP · DIGITAL TWIN BRAIN</p>
+        <h1>在真实实验之前，<br><span>探索更多可能。</span></h1>
+        <p class="lead">面向脑机接口理论研究的一体化数字仿真环境，贯通个体化数字孪生脑建模、外部刺激物理场仿真与脑网络响应研究。</p>
+        <div class="actions">
+          <a class="button primary" href="#platform">了解平台</a>
+          <a class="button secondary" href="#workflow">查看研究流程</a>
+        </div>
+        <p class="institution">电子科技大学中国—古巴神经技术与脑器交互“一带一路”联合实验室</p>
+      </div>
+      <figure class="hero-visual">
+        <div class="screen-frame">
+          <img src="assets/platform-ui.png" alt="脑机接口理论平台图形化界面">
+        </div>
+        <figcaption><span></span>统一软件环境 · 模块化研究流程</figcaption>
+      </figure>
+    </section>
+
+    <section class="why section-shell" aria-labelledby="why-title">
+      <div class="section-heading compact">
+        <p class="kicker">WHY DIGITAL SIMULATION</p>
+        <h2 id="why-title">真实实验不可替代，数字推演让方案更有依据</h2>
+        <p>脑影像采集和神经调控实验往往需要投入较多时间、设备与人员，并受到安全、伦理和受试者耐受等条件约束。数字仿真为实验前的比较与筛选提供新的计算路径。</p>
+      </div>
+      <div class="reason-grid">
+        <article><span>01</span><h3>个体差异</h3><p>融合个体脑结构、功能与活动信息，避免用单一平均模型代表所有个体。</p></article>
+        <article><span>02</span><h3>实验约束</h3><p>在有限的真实实验条件下，先对候选刺激方案进行系统性模拟与比较。</p></article>
+        <article><span>03</span><h3>机制解释</h3><p>连接外部物理刺激、脑网络动力学与可观测脑活动，辅助理解作用机制。</p></article>
+      </div>
+    </section>
+
+    <section class="platform dark-section" id="platform" aria-labelledby="platform-title">
+      <div class="section-shell">
+        <div class="section-heading light">
+          <p class="kicker">ONE COMPUTATIONAL CHAIN</p>
+          <h2 id="platform-title">从多模态数据到数字孪生脑，再到虚拟刺激</h2>
+          <p>平台在统一研究框架中组织脑影像预处理、个体化脑网络建模、虚拟物理场仿真、脑区尺度映射和结果可视化，为后续真实研究提供计算依据。</p>
+        </div>
+        <div class="capability-strip" aria-label="平台计算链路">
+          <div><b>多模态脑影像</b><small>MRI · fMRI · dMRI</small></div><i>→</i>
+          <div><b>数字孪生脑</b><small>结构 · 功能 · 动力学</small></div><i>→</i>
+          <div><b>虚拟物理场</b><small>电 · 磁 · 光</small></div><i>→</i>
+          <div><b>结果映射</b><small>网格 · ROI · 脑网络</small></div>
+        </div>
+        <div class="feature-grid">
+          <article><strong>多模型</strong><p>支持 Wilson–Cowan、动态平均场等大尺度脑网络动力学模型。</p></article>
+          <article><strong>高精度</strong><p>面向千脑区级精细建模，兼顾生物物理合理性与个体特异性。</p></article>
+          <article><strong>高性能</strong><p>Python 组织任务与数据流，高性能科学计算后端承担核心数值计算。</p></article>
+          <article><strong>可扩展</strong><p>模块化接口便于增加模型、优化方法、刺激方式与可视化组件。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow section-shell" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading split-heading">
+        <div><p class="kicker">RESEARCH WORKFLOW</p><h2 id="workflow-title">从真实大脑，到数字推演，再回到真实研究</h2></div>
+        <p>数字推演不替代真实实验，而是帮助研究者在进入实验前形成更清晰的候选方案，并通过后续实验持续验证和修正模型。</p>
+      </div>
+      <figure class="wide-figure">
+        <img src="assets/research-loop.jpeg" alt="BCITP闭环研究流程图">
+      </figure>
+    </section>
+
+    <section class="modules section-shell" id="modules" aria-labelledby="modules-title">
+      <div class="section-heading">
+        <p class="kicker">CORE MODULES</p>
+        <h2 id="modules-title">模块化能力，支撑可复用的研究流程</h2>
+      </div>
+      <div class="module-list">
+        <article class="module-card">
+          <div class="module-copy"><span>DTB</span><h3>数字孪生脑建模</h3><p>融合个体结构连接、功能连接和脑影像衍生指标，开展脑活动仿真、参数扫描与模型拟合，为外部刺激和机制研究提供数字载体。</p><ul><li>多种脑网络动力学模型</li><li>参数优化与批量仿真</li><li>个体化结构—功能约束</li></ul></div>
+          <img src="assets/dtb-workflow.jpeg" alt="数字孪生脑建模流程">
+        </article>
+        <article class="module-card reverse">
+          <div class="module-copy"><span>VPF</span><h3>虚拟物理场仿真</h3><p>从个体结构 MRI 出发重建头部组织，模拟电、磁、光等外部刺激的空间分布及作用过程，并将连续物理场映射至脑区尺度。</p><ul><li>TMS、tDCS、PBM 等刺激方式</li><li>个体化头模型与组织传播</li><li>网格结果到脑图谱 ROI 的映射</li></ul></div>
+          <img src="assets/vpf-workflow.jpeg" alt="虚拟物理场建模流程">
+        </article>
+        <article class="module-card visual-card">
+          <div class="module-copy"><span>UTL</span><h3>可视化与通用工具</h3><p>以矩阵、脑表面、ROI 和顶点级视图呈现连接组、物理场与模型结果，使复杂计算过程更易复核和解释。</p></div>
+          <img src="assets/brain-webgl.png" alt="三维脑表面可视化效果">
+        </article>
+      </div>
+    </section>
+
+    <section class="access" id="access" aria-labelledby="access-title">
+      <div class="section-shell access-grid">
+        <div class="section-heading light">
+          <p class="kicker">FLEXIBLE ACCESS</p>
+          <h2 id="access-title">面向不同研究需求的使用与部署方式</h2>
+          <p>完整平台提供图形化操作界面，算法层提供 Python 接口；既可支持个人计算机上的探索性研究，也可接入高性能计算环境开展批量仿真和参数搜索。</p>
+          <div class="access-tags"><span>图形化界面</span><span>Python API</span><span>个人 PC</span><span>HPC</span><span>Windows 11</span><span>Ubuntu</span></div>
+        </div>
+        <figure><img src="assets/gui-python.jpeg" alt="图形化界面与Python接口两种使用方式"></figure>
+      </div>
+    </section>
+
+    <section class="boundary section-shell" aria-labelledby="boundary-title">
+      <div class="boundary-card">
+        <div><p class="kicker">CURRENT SCOPE</p><h2 id="boundary-title">当前公开算法层边界</h2></div>
+        <p>当前稳定版本覆盖运行配置、脑影像预处理、数字孪生脑建模、虚拟物理场仿真以及可视化与通用工具。虚拟干预评估模块仍在建设中，不作为当前稳定功能承诺。</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="section-shell">
+        <p>生物脑 × 数字脑</p>
+        <h2>以协同交互，开创“双脑”研究新范式。</h2>
+        <span>脑机接口理论平台，在真实实验之前，探索更多可能。</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-inner">
+      <div><strong>BCITP · 脑机接口理论平台</strong><p>电子科技大学中国—古巴神经技术与脑器交互“一带一路”联合实验室</p></div>
+      <a href="#top">返回顶部 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
