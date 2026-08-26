@@ -99,12 +99,14 @@ nav a:hover { color: var(--blue); border-color: var(--cyan); }
 .visual-card { grid-template-columns: .78fr 1.22fr; }
 
 .access { padding-block: 106px; background: var(--navy); }
-.access-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 68px; }
-.access-grid .section-heading { margin: 0; }
-.access-grid figure { margin: 0; padding: 14px; border-radius: 18px; background: white; }
+.access-grid { display: flex; flex-direction: column; align-items: stretch; gap: 38px; }
+.access-grid .section-heading { max-width: none; margin: 0; text-align: center; }
+.access-grid .section-heading h2 { font-size: clamp(32px, 3.35vw, 48px); white-space: nowrap; }
+.access-grid .section-heading > p:last-child { max-width: 900px; margin-inline: auto; }
+.access-grid figure { width: min(980px, 100%); margin: 4px auto 0; padding: 14px; border-radius: 18px; background: white; box-shadow: 0 28px 70px rgba(0,0,0,.22); }
 .access-grid img { width: 100%; border-radius: 10px; }
-.access-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; }
-.access-tags span { padding: 7px 12px; color: #d8ecf4; font-size: 13px; border: 1px solid rgba(255,255,255,.19); border-radius: 99px; background: rgba(255,255,255,.06); }
+.access-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.access-tags span { min-width: 112px; padding: 9px 15px; color: #d8ecf4; font-size: 14px; text-align: center; border: 1px solid rgba(255,255,255,.22); border-radius: 99px; background: rgba(255,255,255,.07); }
 
 .collaboration { padding-block: 108px; }
 .collaboration-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
@@ -130,10 +132,11 @@ footer { color: #9eb1bf; background: #041726; }
 
 @media (max-width: 900px) {
   nav { display: none; }
-  .hero, .access-grid { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: 1fr; }
   .hero { padding-block: 66px 76px; gap: 50px; }
   .why .section-heading h2 { white-space: normal; }
   .platform .section-heading h2 { white-space: normal; }
+  .access-grid .section-heading h2 { white-space: normal; }
   .reason-grid, .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .collaboration-grid { grid-template-columns: 1fr; }
   .capability-strip { grid-template-columns: 1fr; }
