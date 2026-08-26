@@ -66,7 +66,7 @@ nav a:hover { color: var(--blue); border-color: var(--cyan); }
 .section-heading.light .kicker { color: #6ce1e9; }
 .section-heading.light > p:last-child { color: #c2d2df; }
 .platform .section-heading { max-width: none; }
-.platform .section-heading h2 { font-size: clamp(32px, 3.3vw, 48px); white-space: nowrap; }
+.platform .section-heading h2 { font-size: clamp(32px, 3.3vw, 48px); white-space: nowrap; text-wrap: nowrap; }
 .platform .section-heading > p:last-child { max-width: 860px; }
 .capability-strip { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; align-items: center; gap: 14px; padding: 24px; border: 1px solid rgba(255,255,255,.15); border-radius: 18px; background: rgba(255,255,255,.06); }
 .capability-strip div { min-height: 92px; padding: 18px; display: flex; flex-direction: column; justify-content: center; border-radius: 12px; background: rgba(255,255,255,.07); }
@@ -98,15 +98,17 @@ nav a:hover { color: var(--blue); border-color: var(--cyan); }
 .module-card img { width: 100%; max-height: 360px; object-fit: contain; mix-blend-mode: multiply; }
 .visual-card { grid-template-columns: .78fr 1.22fr; }
 
-.access { padding-block: 106px; background: var(--navy); }
-.access-grid { display: flex; flex-direction: column; align-items: stretch; gap: 38px; }
-.access-grid .section-heading { max-width: none; margin: 0; text-align: center; }
-.access-grid .section-heading h2 { font-size: clamp(32px, 3.35vw, 48px); white-space: nowrap; }
+.access { padding-block: 112px; overflow: hidden; background: radial-gradient(circle at 50% 50%, rgba(26,181,199,.12), transparent 54%), var(--navy); }
+.access-grid { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.access-grid .section-heading { width: 100%; max-width: none; margin: 0; text-align: center; }
+.access-grid .section-heading h2 { font-size: clamp(32px, 3.35vw, 48px); white-space: nowrap; text-wrap: nowrap; }
 .access-grid .section-heading > p:last-child { max-width: 900px; margin-inline: auto; }
-.access-grid figure { width: min(980px, 100%); margin: 4px auto 0; padding: 14px; border-radius: 18px; background: white; box-shadow: 0 28px 70px rgba(0,0,0,.22); }
+.access-visual { width: min(980px, 100%); margin: 6px 0 2px; padding: 14px; position: relative; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; background: white; box-shadow: 0 28px 70px rgba(0,0,0,.22); }
+.access-visual::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; background: linear-gradient(120deg, rgba(108,225,233,.56), transparent 38%, rgba(255,255,255,.32)); filter: blur(12px); }
 .access-grid img { width: 100%; border-radius: 10px; }
-.access-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.access-tags span { min-width: 112px; padding: 9px 15px; color: #d8ecf4; font-size: 14px; text-align: center; border: 1px solid rgba(255,255,255,.22); border-radius: 99px; background: rgba(255,255,255,.07); }
+.access-tags { width: min(760px, 100%); padding: 18px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; border-top: 1px solid rgba(255,255,255,.14); }
+.access-tags span { min-width: 112px; padding: 9px 15px; color: #d8ecf4; font-size: 14px; text-align: center; border: 1px solid rgba(255,255,255,.22); border-radius: 99px; background: rgba(255,255,255,.07); transition: transform .2s ease, background .2s ease; }
+.access-tags span:hover { transform: translateY(-2px); background: rgba(108,225,233,.16); }
 
 .collaboration { padding-block: 108px; }
 .collaboration-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
@@ -162,6 +164,10 @@ footer { color: #9eb1bf; background: #041726; }
   .reason-grid article { min-height: 210px; }
   .dark-section, .access { padding-block: 76px; }
   .capability-strip { padding: 16px; }
+  .access-grid { gap: 26px; }
+  .access-visual { padding: 8px; border-radius: 14px; }
+  .access-tags { padding: 14px 0 0; gap: 8px; }
+  .access-tags span { min-width: 0; padding-inline: 12px; }
   .module-card { min-height: auto; padding: 24px; }
   .module-copy h3 { font-size: 27px; }
   .wide-figure { padding: 8px; }
