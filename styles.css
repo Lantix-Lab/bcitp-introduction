@@ -30,6 +30,7 @@ nav a:hover { color: var(--blue); border-color: var(--cyan); }
 
 .hero { min-height: 620px; padding-block: 76px 66px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 54px; }
 .eyebrow, .kicker { margin: 0 0 18px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .16em; }
+.hero .eyebrow { white-space: nowrap; font-size: clamp(6px, .8vw, 10px); letter-spacing: .06em; }
 .hero h1 { margin: 0; color: var(--navy); font-size: clamp(42px, 4.6vw, 64px); line-height: 1.2; letter-spacing: -.045em; }
 .hero-line { display: block; white-space: nowrap; }
 .hero-line.accent { color: var(--blue); }
