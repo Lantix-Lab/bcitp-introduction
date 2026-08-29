@@ -11,6 +11,8 @@
 
 > BrainExpanse 仍在持续开发和完善中。本文档与网站用于公开介绍平台愿景、研究边界和合作方式；算法实现与开发资料不在本公开仓库中发布。
 
+宣传页面：[lantix-lab.github.io/BrainExpanse-Introduction](https://lantix-lab.github.io/BrainExpanse-Introduction/)
+
 ## 平台能力
 
 ```text
@@ -44,20 +46,6 @@
 - EVA 目前处于规划和接口完善阶段，尚不提供可用于研究或验收的完整评估算法。
 - 平台面向研究中的理论推演、方案比较和机制探索，不替代真实实验、临床判断或监管流程。
 - BrainExpanse 的算法实现仍为非公开开发项目；本仓库不提供安装包、前端服务、任务队列、数据库或远程部署服务。
-
-## 本仓库与公开页面
-
-本仓库是 BrainExpanse 的公开介绍站，采用纯静态网页实现，无需 Node.js、数据库或后端服务。
-
-- 在线页面：通过 GitHub Pages 发布。
-- 页面文件：`index.html`、`styles.css`、`.nojekyll` 与 `assets/`。
-- 本地预览：请通过本地 HTTP 服务打开 `index.html`，不建议直接双击文件。
-
-GitHub Pages 可在仓库 **Settings → Pages** 中配置为：
-
-- Source：`Deploy from a branch`
-- Branch：`main`
-- Folder：`/(root)`
 
 ## 试用与合作
 
