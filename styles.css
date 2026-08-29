@@ -131,7 +131,8 @@ footer { color: #9eb1bf; background: #041726; }
 .footer-inner { min-height: 130px; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
 .footer-inner strong { color: white; }
 .footer-inner p { margin: 4px 0 0; font-size: 12px; }
-.footer-inner a { color: white; font-size: 13px; }
+.footer-links { display: flex; gap: 22px; align-items: center; }
+.footer-links a { color: white; font-size: 13px; }
 
 @media (max-width: 900px) {
   nav { display: none; }
@@ -177,6 +178,7 @@ footer { color: #9eb1bf; background: #041726; }
   .contact-line a { font-size: 16px; }
   .closing { padding-block: 88px; }
   .footer-inner { padding-block: 30px; align-items: flex-start; flex-direction: column; }
+  .footer-links { align-items: flex-start; flex-direction: column; gap: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

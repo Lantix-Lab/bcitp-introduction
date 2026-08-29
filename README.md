@@ -11,7 +11,8 @@
 
 > BrainExpanse 仍在持续开发和完善中。本文档与网站用于公开介绍平台愿景、研究边界和合作方式；算法实现与开发资料不在本公开仓库中发布。
 
-宣传页面：[lantix-lab.github.io/BrainExpanse-Introduction](https://lantix-lab.github.io/BrainExpanse-Introduction/)
+正式页面：[bac.uestc.edu.cn/BrainExpanse-Introduction.htm](https://bac.uestc.edu.cn/BrainExpanse-Introduction.htm)<br>
+公开镜像：[lantix-lab.github.io/BrainExpanse-Introduction](https://lantix-lab.github.io/BrainExpanse-Introduction/)
 
 ## 平台能力
 

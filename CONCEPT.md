@@ -3,7 +3,8 @@
 **Version:** 0.1.0<br>
 **Public declaration date:** 2026-08-29<br>
 **Project:** BrainExpanse<br>
-**Public introduction:** <https://lantix-lab.github.io/BrainExpanse-Introduction/>
+**Official introduction:** <https://bac.uestc.edu.cn/BrainExpanse-Introduction.htm><br>
+**Public mirror:** <https://lantix-lab.github.io/BrainExpanse-Introduction/>
 
 ![BrainExpanse 标识](assets/平台LOGO.png)
 
