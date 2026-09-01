@@ -5,7 +5,7 @@
 **Digital Twin Brain based Brain Computer Interface Theoretical Platform**<br>
 **数字孪生脑-脑机接口理论平台**
 
-最后修改日期：2026年9月1日 12:57:03
+最后修改日期：2026年9月1日 12:59:59
 
 **BrainExpanse** 是面向脑科学与脑机接口理论研究的模块化计算平台，围绕单被试个体化研究场景，组织脑影像预处理、数字孪生脑建模、虚拟物理场仿真、结果映射与可视化能力。
 
@@ -48,31 +48,7 @@
 - PRE、DTB、VPF 和 UTL 已形成平台当前的主要能力基础。
 - EVA 目前处于规划和接口完善阶段，尚不提供可用于研究或验收的完整评估算法。
 - 平台面向研究中的理论推演、方案比较和机制探索，不替代真实实验、临床判断或监管流程。
-- BrainExpanse 的算法实现仍为非公开开发项目；本仓库不提供安装包、前端服务、任务队列、数据库或远程部署服务。
-
-## 开发与发布命名约定
-
-BrainExpanse 将算法包与 GUI 包作为独立项目发布和演进。以下约定定义了正式发布后的分发、导入与命令行名称；在当前开发阶段，算法实现仍在完成从 BCITP 的迁移。
-
-| 角色 | 建议名称 |
-| --- | --- |
-| 算法包的 PyPI/安装名 | `brainexpanse-main` |
-| 算法包的 Python 根包 | `brainexpanse` |
-| GUI 的 PyPI/安装名 | `brainexpanse-gui` |
-| GUI 的 Python 根包 | `brainexpanse_gui` |
-| 算法 CLI | `brainexpanse` |
-| GUI CLI（如需要） | `brainexpanse-gui` |
-
-算法包独占 `brainexpanse` Python 根包，因此研究人员和集成方可使用清晰的模块路径，例如：
-
-```python
-from brainexpanse.dtb import workflow
-from brainexpanse.pre import run_pre_single_subject
-```
-
-GUI 包使用独立的 `brainexpanse_gui` 根包，并仅依赖算法包的公开 API。GUI 不创建 `brainexpanse/` 目录，也不采用 `brainexpanse.main.*` 或 `brainexpanse.gui.*` 导入层级，从而避免两个独立安装包在同一 Python 环境中发生文件覆盖或命名冲突。
-
-正式发布后，GUI 将声明对 `brainexpanse-main` 相应主版本的依赖；算法 API 发生不兼容变化时，算法包与 GUI 包同步提升主版本并完成适配。
+- 本仓库用于平台公开介绍，不提供安装包、前端服务、任务队列、数据库或远程部署服务。
 
 ## 试用与合作
 
